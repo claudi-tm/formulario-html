@@ -5,18 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cadastro</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <h1>Cadastro de DEVs</h1>
+            <h1 id="titulo">Cadastro de DEVs</h1>
         </header>
         <form>
-            <fieldset>
-                <legend>Complete suas informaçoes</legend>
+            <fieldset class="group">
+                <legend id="subtitulo">Complete suas informaçoes</legend>
 
                 <section id="name_section">
                     <label for="nome">Nome </label
-                    ><input type="text" name="name_input" id="name_input" />
+                    ><input type="text" name="name_input" id="name_input" required/>
                 </section>
                 <section id="surname_section">
                     <label for="sobrenome">Sobrenome</label>
@@ -24,11 +25,13 @@
                         type="text"
                         name="sobrenome_input"
                         id="sobrenome_input"
+                        required
                     />
                 </section>
                 <section id="email_section">
                     <label for="email">Email</label>
-                    <input type="email" name="email_input" id="email_input" />
+                    <input type="email" name="email_input" id="email_input"
+                    required />
                 </section>
             </fieldset>
             <section id="stack_section">
@@ -61,8 +64,8 @@
                     <option value="senior">Senior</option>
                 </select>
             </section>
-            <fieldset>
-                <legend>Selecione as tecnologias que utiliza</legend>
+            <fieldset class="group">
+                <legend id="subtitulo">Selecione as tecnologias que utiliza</legend>
                 <input
                     type="checkbox"
                     name="tecnologia1"
@@ -117,6 +120,6 @@
                 <textarea name="experience" id="experience" ></textarea>
             </section>
         </form>
-        <button type="submit">Concluido</button>
+        <section id="button"><button type="submit">Concluido</button></section>
     </body>
 </html>
